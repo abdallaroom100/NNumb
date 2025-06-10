@@ -120,6 +120,7 @@ body {
 }
 .block1-head2:first-of-type {
   margin-top: 70px;
+  text-wrap:nowrap
 }
 
 .block1-container-3 {
@@ -534,13 +535,15 @@ section one
 
 .section-one-content{
   top: 28vw;
-  right: 2vw;
+  right: 1.8vw;
   font-size: clamp(15px,2vw,34px);
-  text-align: center;
+  text-align: start;
 
 }
 .section-one-content h2 {
-  font-size: clamp(2.4vw,3.6vw,3.3vw);
+     font-size: clamp(2.2vw, 2vw, 2vw);
+     padding-bottom: 4px;
+
   /* text-shadow: 0.5px 0 #535151, 0.3px 0 #393939, 0 0.5px #151010, 0 1px rgb(99, 91, 91); */
   text-shadow: 0.5px 0.5px #2e3458, -0.5px -0.5px #2e3458, 0.5px -0.5px #2e3458, -0.5px 0.5px #2e3458;
 }
