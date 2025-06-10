@@ -331,14 +331,16 @@
                 العرض الخاص لفترة محدودة
                 <br>
                 <span> 
-                    لا تنتظر أكثر، تحكم بحياتك الجنسية الآن واستعد الثقة والسعادة في علاقتك الزوجية
+                    لا تنتظر أكثر، تحكم بحياتك الزوجية الآن واستعد الثقة والسعادة في علاقتك الزوجية
                 </span>
             </h2>
             <div class=" flex flex-col justify-center md:flex-row gap-[1.5rem]">
                 <div class="  d-flex align-items-center justify-content-center flex item-start justify-start flex-1">
 
-                    <div class="block4-price flex items-start justify-around">
-                        <img src="numm images/last___section-edit.png" alt="MAXMIZER Gel price" class="max-h-[500px]">
+                    <div class="block4-price flex items-start justify-around"
+                    style="transform: scale(1.06) translateY(10px);"
+                    >
+                        <img src="numm images/last--section--edit.png" alt="MAXMIZER Gel price" class="max-h-[500px]">
                     </div>
 
                 </div>
@@ -357,15 +359,20 @@
                             </span>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control form-control-input" id="text" placeholder="الآسم" name="entry.1554675572" required>
+                                <input type="text" class="form-control form-control-input" id="text" placeholder="الآسم كامل" name="entry.562105314" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control form-control-input phone_number" type="number" minlength="10" maxlength="10" data-label="Phone" name="entry.695789568" id="form-phone" placeholder="رقم الهاتف" required>
-                                <p style="text-align: right; color: indianred; display: none; margin-top: 3%;" class="error-2">الحد الأدنى لعدد الأرقام هو 10</p>
-                                <p style="text-align: right; color: indianred;display: none; margin-top: 3%;" class="error-1">الحد الأقصى لعدد الأرقام هو 10</p>
+                                <input class="form-control form-control-input phone_number" type="number" minlength="11" maxlength="11" data-label="Phone" name="entry.1981339059" id="form-phone" placeholder="رقم الهاتف" required>
+                                <p style="text-align: right; color: indianred; display: none; margin-top: 3%;" class="error-2">الحد الأدنى لعدد الأرقام هو 11</p>
+                                <p style="text-align: right; color: indianred;display: none; margin-top: 3%;" class="error-1">الحد الأقصى لعدد الأرقام هو 11</p>
                             </div>
-							
-                            <input type="hidden" name="entry.380780166"  value="test0001" id="article">
+							<div class="form-group">
+                                <input type="text" class="form-control form-control-input" id="text" placeholder="المدينة" name="entry.640924808" required>
+                            </div>
+							<div class="form-group">
+                                <input type="text" class="form-control form-control-input" id="text" placeholder="العنوان بالتفصيل" name="entry.1301342143" required>
+                            </div>
+                            <input type="hidden" name="entry.754746203"  value="test0001" id="article">
                             <input type="hidden" name="entry.1023840735" value="v1" id="version">
                             <input type="hidden" name="entry.673826131" value="Computer" id="device"> 
                             <div class="clearfix"></div>
@@ -384,14 +391,14 @@
     <!--End block4-->
 <script>
   
-    document.querySelector("#article").setAttribute("value",(window.location.href?.split("?srckey=")[1]?.split("&")[0]?.split("#")[0] || "test0001"))
+    document.querySelector("#article").setAttribute("value",(window.location.href?.split("?source=")[1]?.split("&")[0]?.split("#")[0] || "Main000"))
     if(window.innerWidth < 900){
         document.querySelector("#device").setAttribute("value","Mobile")
     }
  
  const phoneNumber = document.querySelector(".phone_number")
     phoneNumber.addEventListener("input",(e)=>{
-            if(e.target.value.length > 10){
+            if(e.target.value.length > 11){
                 document.querySelector(".error-1").style.display = "block"
                 document.querySelector(".error-2").style.display = "none"
             }else if(e.target.value.length < 10){
