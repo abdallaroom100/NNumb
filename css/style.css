@@ -691,3 +691,8 @@ img{
 form input{
   background: #42589d !important;
 }
+
+
+  .custom-radio{
+    display:none !important
+  }
